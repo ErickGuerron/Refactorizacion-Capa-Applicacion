@@ -1,6 +1,7 @@
-using Mediator_REST_API.Application.Features.DentalOffices.Commands.CreateDentalOffice;
-using Mediator_REST_API.Application.Features.DentalOffices.Queries.GetDentalOfficeDetail;
-using Mediator_REST_API.Application.Utilities;
+using Mediator_REST_API.Application.UseCases.DentalOffices.CreateDentalOffice;
+using Mediator_REST_API.Application.UseCases.DentalOffices.CreateDentalOffice.Dto;
+using Mediator_REST_API.Application.UseCases.DentalOffices.GetDentalOfficeDetail;
+using Mediator_REST_API.Application.UseCases.DentalOffices.GetDentalOfficeDetail.Dto;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Mediator_REST_API.Controllers;
@@ -9,25 +10,30 @@ namespace Mediator_REST_API.Controllers;
 [Route("api/[controller]")]
 public class DentalOfficeController : ControllerBase
 {
-    private readonly IMediator _mediator;
+    private readonly ICreateDentalOfficeUseCase _createDentalOfficeUseCase;
+    private readonly IGetDentalOfficeDetailUseCase _getDentalOfficeDetailUseCase;
 
-    public DentalOfficeController(IMediator mediator)
+    public DentalOfficeController(
+        ICreateDentalOfficeUseCase createDentalOfficeUseCase,
+        IGetDentalOfficeDetailUseCase getDentalOfficeDetailUseCase)
     {
-        _mediator = mediator;
+        _createDentalOfficeUseCase = createDentalOfficeUseCase;
+        _getDentalOfficeDetailUseCase = getDentalOfficeDetailUseCase;
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(CreateDentalOfficeCommand command)
+    public async Task<IActionResult> Create(
+        [FromBody] CreateDentalOfficeInput input,
+        CancellationToken cancellationToken)
     {
-        var id = await _mediator.Send(command);
-        return Ok(id);
+        var output = await _createDentalOfficeUseCase.ExecuteAsync(input, cancellationToken);
+        return Ok(output);
     }
 
     [HttpGet("{id:guid}")]
-    public async Task<IActionResult> GetById(Guid id)
+    public async Task<IActionResult> GetById(Guid id, CancellationToken cancellationToken)
     {
-        var query = new GetDentalOfficeDetailQuery { Id = id };
-        var result = await _mediator.Send(query);
-        return Ok(result);
+        var output = await _getDentalOfficeDetailUseCase.ExecuteAsync(id, cancellationToken);
+        return Ok(output);
     }
 }
