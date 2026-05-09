@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "Mediator_REST_API.Controllers.DentalOfficeController",
+    "Method": "Create",
+    "RelativePath": "api/DentalOffice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Mediator_REST_API.Application.Features.DentalOffices.Commands.CreateDentalOffice.CreateDentalOfficeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

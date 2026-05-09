@@ -1,0 +1,27 @@
+# .NET build outputs
+bin/
+obj/
+out/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.slnx
+*.swb
+*.db
+.vscode/
+
+# Rider / JetBrains
+.idea/
+*.DotSettings.user
+
+# NuGet
+*.nupkg
+packages/
+
+# Test results
+TestResults/
+*.trx
+coverage/
+*.coverage*
