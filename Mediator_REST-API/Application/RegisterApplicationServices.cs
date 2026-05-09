@@ -1,5 +1,6 @@
 using FluentValidation;
 using Mediator_REST_API.Application.UseCases.DentalOffices.CreateDentalOffice;
+using Mediator_REST_API.Application.UseCases.DentalOffices.CreateDentalOffice.Dto;
 using Mediator_REST_API.Application.UseCases.DentalOffices.GetDentalOfficeDetail;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -14,7 +15,7 @@ public static class RegisterApplicationServices
         services.AddScoped<IGetDentalOfficeDetailUseCase, GetDentalOfficeDetailUseCase>();
 
         // Validators
-        services.AddScoped<CreateDentalOfficeValidator>();
+        services.AddScoped<IValidator<CreateDentalOfficeInput>, CreateDentalOfficeValidator>();
 
         return services;
     }
