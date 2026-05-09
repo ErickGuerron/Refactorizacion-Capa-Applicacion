@@ -1,0 +1,114 @@
+================================================================================
+        COBERTURA DE TESTS UNITARIOS - USE CASES DENTALOFFICE
+================================================================================
+
+DESCRIPCION GENERAL
+--------------------------------------------------------------------------------
+Se implementaron tests unitarios para los Use Cases de la funcionalidad
+de consultorios dentales (DentalOffice), siguiendo el patron de arquitectura
+limpia (Clean Architecture) con separacion de capas.
+
+Los tests utilizan xUnit como framework de testing y Moq para crear mocks
+de las dependencias (repositorio y UnitOfWork), permitiendo verificar el
+comportamiento de los Use Cases de forma aislada.
+
+
+FLUJO DE UN USE CASE
+--------------------------------------------------------------------------------
+Controller → Input (DTO) → [UseCase] → Validacion
+                                         ↓
+                              Repository + UnitOfWork
+                                         ↓
+                              Output (DTO) → Response
+
+
+GET DENTAL OFFICE DETAIL USE CASE
+--------------------------------------------------------------------------------
+Proposito: Obtener los detalles de un consultorio dental por su ID.
+
+Escenarios cubiertos:
+- ID existente → Retorna Id y Name del consultorio
+- ID inexistente → Lanaza KeyNotFoundException
+- Guid.Empty → Lanaza ArgumentException
+- Verifica que GetById se llama exactamente una vez
+- Verifica que se pasa el ID correcto al repositorio
+- Verifica que no se llaman otros metodos del repositorio
+
+
+CREATE DENTAL OFFICE USE CASE
+--------------------------------------------------------------------------------
+Proposito: Crear un nuevo consultorio dental con validacion de nombre.
+
+Escenarios cubiertos:
+- Input valido → Retorna Id y Name, llama Commit una vez
+- Nombre vacio ("") → Lanza CustomValidationException
+- Nombre con espacios ("   ") → Lanza CustomValidationException
+- Nombre null → Lanza CustomValidationException
+- Error de repositorio → Llama Rollback
+- Error de Commit → Llama Rollback y relanza la excepcion
+- Verifica que Add/Commit nunca se llaman en validacion fallida
+- Verifica que Rollback nunca se llama en caso de exito
+
+
+CORRECCIONES REALIZADAS
+--------------------------------------------------------------------------------
+1. CreateDentalOfficeValidator: Se agregaron las reglas NotNull() y NotEmpty()
+   para cubrir todos los casos de validacion de nombre (null, vacio, espacios).
+
+2. Se agregaron verificaciones exhaustivas de interacciones con mocks para
+   garantizar que los metodos se llaman el numero correcto de veces.
+
+
+================================================================================
+                        TABLA DE COBERTURA FINAL
+================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                      COBERTURA DE TESTS                                  │
+│                      Use Cases - DentalOffice                           │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  IMPLEMENTADOS: 21/21 (100%)                                            │
+│                                                                          │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  GET DENTAL OFFICE DETAIL USE CASE (6 tests)                            │
+│  ├── ✅ ExecuteAsync_WithExistingId_ReturnsOutputWithIdAndName         │
+│  ├── ✅ ExecuteAsync_WithNonExistingId_ThrowsKeyNotFoundException       │
+│  ├── ✅ ExecuteAsync_WithEmptyGuid_ThrowsArgumentException              │
+│  ├── ✅ ExecuteAsync_WithExistingId_CallsRepositoryGetByIdOnce         │
+│  ├── ✅ ExecuteAsync_WithExistingId_PassesCorrectIdToRepository        │
+│  └── ✅ ExecuteAsync_WithExistingId_DoesNotCallOtherRepositoryMethods  │
+│                                                                          │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  CREATE DENTAL OFFICE USE CASE (15 tests)                               │
+│  ├── ✅ ExecuteAsync_WithValidInput_ReturnsOutputWithIdAndName         │
+│  ├── ✅ ExecuteAsync_WithEmptyName_ThrowsCustomValidationException      │
+│  ├── ✅ ExecuteAsync_WithWhitespaceName_ThrowsCustomValidationException│
+│  ├── ✅ ExecuteAsync_OnRepositoryException_CallsRollback                │
+│  ├── ✅ ExecuteAsync_WithValidInput_CallsCommitOnce                    │
+│  ├── ✅ ExecuteAsync_WithValidInput_DoesNotCallRollback                │
+│  ├── ✅ ExecuteAsync_WithValidInput_CallsAddWithNewDentalOffice        │
+│  ├── ✅ ExecuteAsync_WithEmptyName_DoesNotCallAdd                      │
+│  ├── ✅ ExecuteAsync_WithEmptyName_DoesNotCallCommit                   │
+│  ├── ✅ ExecuteAsync_WithWhitespaceName_DoesNotCallAdd                 │
+│  ├── ✅ ExecuteAsync_WithWhitespaceName_DoesNotCallCommit              │
+│  ├── ✅ ExecuteAsync_WithNullName_ThrowsCustomValidationException       │
+│  ├── ✅ ExecuteAsync_WhenCommitFails_CallsRollback                     │
+│  ├── ✅ ExecuteAsync_WhenCommitFails_ReThrowsException                 │
+│  └── ✅ ExecuteAsync_WhenCommitFails_HasCalledAddBeforeFailure         │
+│                                                                          │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  ESCENARIOS CUBIERTOS:                                                  │
+│  ├── Happy path (flujo exitoso)                                    ✅    │
+│  ├── Validaciones de input (null, empty, whitespace)             ✅    │
+│  ├── Errores de repositorio                                        ✅    │
+│  ├── Errores de Commit                                            ✅    │
+│  ├── Verificacion de interacciones (Verify mocks)                ✅    │
+│  └── Verificacion de rollback en caso de error                   ✅    │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+================================================================================

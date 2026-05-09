@@ -8,6 +8,7 @@ public class CreateDentalOfficeValidator : AbstractValidator<CreateDentalOfficeI
     public CreateDentalOfficeValidator()
     {
         RuleFor(input => input.Name)
+            .NotNull().WithMessage("El campo Nombre es requerido")
             .NotEmpty().WithMessage("El campo Nombre es requerido");
     }
 }

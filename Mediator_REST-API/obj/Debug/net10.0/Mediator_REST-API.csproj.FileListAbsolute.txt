@@ -34,3 +34,45 @@ C:\Users\erick\OneDrive\Documentos\Quinto Semestre\Patrones de Software\Deberes\
 C:\Users\erick\OneDrive\Documentos\Quinto Semestre\Patrones de Software\Deberes\Patterns_Solution\Mediator_REST-API\obj\Debug\net10.0\Mediator_REST-API.genruntimeconfig.cache
 C:\Users\erick\OneDrive\Documentos\Quinto Semestre\Patrones de Software\Deberes\Patterns_Solution\Mediator_REST-API\obj\Debug\net10.0\ref\Mediator_REST-API.dll
 C:\Users\erick\OneDrive\Documentos\Quinto Semestre\Patrones de Software\Deberes\Patterns_Solution\Mediator_REST-API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\appsettings.json
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\Mediator_REST-API.staticwebassets.endpoints.json
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\Mediator_REST-API.exe
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\Mediator_REST-API.deps.json
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\Mediator_REST-API.runtimeconfig.json
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\Mediator_REST-API.dll
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\Mediator_REST-API.pdb
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\FluentValidation.dll
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\MediatR.dll
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\MediatR.Contracts.dll
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\Mediator_REST-API.csproj.AssemblyReference.cache
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\Mediator_REST-API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\Mediator_REST-API.AssemblyInfoInputs.cache
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\Mediator_REST-API.AssemblyInfo.cs
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\Mediator_REST-API.csproj.CoreCompileInputs.cache
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\Mediator_REST-API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\Mediator_REST-API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\Mediator_REST-API.sourcelink.json
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\scopedcss\bundle\Mediator_REST-API.styles.css
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\Mediator.757AAACE.Up2Date
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\Mediator_REST-API.dll
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\refint\Mediator_REST-API.dll
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\Mediator_REST-API.pdb
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\Mediator_REST-API.genruntimeconfig.cache
+C:\Users\patyl\Documents\Proyectos_Ingenieria\Refactorizacion-Capa-Applicacion\Mediator_REST-API\obj\Debug\net10.0\ref\Mediator_REST-API.dll
