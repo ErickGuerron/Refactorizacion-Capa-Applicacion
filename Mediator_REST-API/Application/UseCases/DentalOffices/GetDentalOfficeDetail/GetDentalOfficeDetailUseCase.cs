@@ -1,4 +1,5 @@
 using Mediator_REST_API.Application.Contracts.Repositories;
+using Mediator_REST_API.Application.Exceptions;
 using Mediator_REST_API.Application.UseCases.DentalOffices.GetDentalOfficeDetail.Dto;
 using Mediator_REST_API.Domain.Entities;
 
@@ -24,7 +25,7 @@ public class GetDentalOfficeDetailUseCase : IGetDentalOfficeDetailUseCase
 
         if (dentalOffice is null)
         {
-            throw new KeyNotFoundException($"DentalOffice with Id {id} was not found.");
+            throw new EntityNotFoundException("DentalOffice", id);
         }
 
         return new GetDentalOfficeDetailOutput

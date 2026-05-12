@@ -1,3 +1,4 @@
+using Mediator_REST_API.Application.Exceptions;
 using Mediator_REST_API.Application.Contracts.Repositories;
 using Mediator_REST_API.Application.UseCases.DentalOffices.GetDentalOfficeDetail;
 using Mediator_REST_API.Application.UseCases.DentalOffices.GetDentalOfficeDetail.Dto;
@@ -33,14 +34,14 @@ public class GetDentalOfficeDetailUseCaseTests
     }
 
     [Fact]
-    public async Task ExecuteAsync_WithNonExistingId_ThrowsKeyNotFoundException()
+    public async Task ExecuteAsync_WithNonExistingId_ThrowsEntityNotFoundException()
     {
         var inputId = Guid.NewGuid();
 
         _repositoryMock.Setup(r => r.GetById(inputId))
             .ReturnsAsync((DentalOffice?)null);
 
-        await Assert.ThrowsAsync<KeyNotFoundException>(
+        await Assert.ThrowsAsync<EntityNotFoundException>(
             () => _useCase.ExecuteAsync(inputId));
     }
 
