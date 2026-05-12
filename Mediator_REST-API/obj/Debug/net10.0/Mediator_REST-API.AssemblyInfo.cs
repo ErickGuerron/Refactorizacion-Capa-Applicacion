@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mediator_REST-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+598a9c01d1bb9221aad3bd3136119bfe2aa0359e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d47cef1da976b7f8322495aa4d08e66858d0842f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mediator_REST-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mediator_REST-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
