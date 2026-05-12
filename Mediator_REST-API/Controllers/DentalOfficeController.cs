@@ -1,7 +1,7 @@
-using Mediator_REST_API.Application.UseCases.DentalOffices.CreateDentalOffice;
-using Mediator_REST_API.Application.UseCases.DentalOffices.CreateDentalOffice.Dto;
-using Mediator_REST_API.Application.UseCases.DentalOffices.GetDentalOfficeDetail;
-using Mediator_REST_API.Application.UseCases.DentalOffices.GetDentalOfficeDetail.Dto;
+using Mediator_REST_API.Application.UseCases.DentalOffices.AddDentalOffice;
+using Mediator_REST_API.Application.UseCases.DentalOffices.AddDentalOffice.Dto;
+using Mediator_REST_API.Application.UseCases.DentalOffices.GetDentalOfficeById;
+using Mediator_REST_API.Application.UseCases.DentalOffices.GetDentalOfficeById.Dto;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Mediator_REST_API.Controllers;
@@ -10,30 +10,30 @@ namespace Mediator_REST_API.Controllers;
 [Route("api/[controller]")]
 public class DentalOfficeController : ControllerBase
 {
-    private readonly ICreateDentalOfficeUseCase _createDentalOfficeUseCase;
-    private readonly IGetDentalOfficeDetailUseCase _getDentalOfficeDetailUseCase;
+    private readonly IAddDentalOfficeUseCase _addDentalOfficeUseCase;
+    private readonly IGetDentalOfficeByIdUseCase _getDentalOfficeByIdUseCase;
 
     public DentalOfficeController(
-        ICreateDentalOfficeUseCase createDentalOfficeUseCase,
-        IGetDentalOfficeDetailUseCase getDentalOfficeDetailUseCase)
+        IAddDentalOfficeUseCase addDentalOfficeUseCase,
+        IGetDentalOfficeByIdUseCase getDentalOfficeByIdUseCase)
     {
-        _createDentalOfficeUseCase = createDentalOfficeUseCase;
-        _getDentalOfficeDetailUseCase = getDentalOfficeDetailUseCase;
+        _addDentalOfficeUseCase = addDentalOfficeUseCase;
+        _getDentalOfficeByIdUseCase = getDentalOfficeByIdUseCase;
     }
 
     [HttpPost]
     public async Task<IActionResult> Create(
-        [FromBody] CreateDentalOfficeInput input,
+        [FromBody] AddDentalOfficeInput input,
         CancellationToken cancellationToken)
     {
-        var output = await _createDentalOfficeUseCase.ExecuteAsync(input, cancellationToken);
+        var output = await _addDentalOfficeUseCase.ExecuteAsync(input, cancellationToken);
         return Ok(output);
     }
 
     [HttpGet("{id:guid}")]
     public async Task<IActionResult> GetById(Guid id, CancellationToken cancellationToken)
     {
-        var output = await _getDentalOfficeDetailUseCase.ExecuteAsync(id, cancellationToken);
+        var output = await _getDentalOfficeByIdUseCase.ExecuteAsync(id, cancellationToken);
         return Ok(output);
     }
 }

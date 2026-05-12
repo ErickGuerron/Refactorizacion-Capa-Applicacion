@@ -8,8 +8,24 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
-        "Type": "Mediator_REST_API.Application.Features.DentalOffices.Commands.CreateDentalOffice.CreateDentalOfficeCommand",
+        "Name": "input",
+        "Type": "Mediator_REST_API.Application.UseCases.DentalOffices.AddDentalOffice.Dto.AddDentalOfficeInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Mediator_REST_API.Controllers.DentalOfficeController",
+    "Method": "GetById",
+    "RelativePath": "api/DentalOffice/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],

@@ -22,17 +22,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateDentalOfficeCommand"
+                "$ref": "#/components/schemas/AddDentalOfficeInput"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateDentalOfficeCommand"
+                "$ref": "#/components/schemas/AddDentalOfficeInput"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateDentalOfficeCommand"
+                "$ref": "#/components/schemas/AddDentalOfficeInput"
               }
             }
           },
@@ -44,11 +44,34 @@
           }
         }
       }
+    },
+    "/api/DentalOffice/{id}": {
+      "get": {
+        "tags": [
+          "DentalOffice"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
-      "CreateDentalOfficeCommand": {
+      "AddDentalOfficeInput": {
         "required": [
           "name"
         ],

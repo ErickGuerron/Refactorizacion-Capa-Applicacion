@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "l+uDF70tXfQ=",
+  "dgSpecHash": "Ex5PhtF+QHI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\patyl\\Documents\\Proyectos_Ingenieria\\Refactorizacion-Capa-Applicacion\\Mediator_REST-API\\Mediator_REST-API.csproj",
+  "projectFilePath": "C:\\Users\\erick\\Documents\\Quinto Semestre\\Patrones de Software\\Deberes\\Patterns_Solution\\Mediator_REST-API\\Mediator_REST-API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\patyl\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
-    "C:\\Users\\patyl\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
-    "C:\\Users\\patyl\\.nuget\\packages\\mediatr\\14.1.0\\mediatr.14.1.0.nupkg.sha512",
-    "C:\\Users\\patyl\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\patyl\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.6\\microsoft.aspnetcore.openapi.10.0.6.nupkg.sha512",
-    "C:\\Users\\patyl\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.14.0\\microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
-    "C:\\Users\\patyl\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.14.0\\microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg.sha512",
-    "C:\\Users\\patyl\\.nuget\\packages\\microsoft.identitymodel.logging\\8.14.0\\microsoft.identitymodel.logging.8.14.0.nupkg.sha512",
-    "C:\\Users\\patyl\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.14.0\\microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
-    "C:\\Users\\patyl\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+    "C:\\Users\\erick\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\mediatr\\14.1.0\\mediatr.14.1.0.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.6\\microsoft.aspnetcore.openapi.10.0.6.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.14.0\\microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.14.0\\microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\microsoft.identitymodel.logging\\8.14.0\\microsoft.identitymodel.logging.8.14.0.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.14.0\\microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
   ],
   "logs": []
 }

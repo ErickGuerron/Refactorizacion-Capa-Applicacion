@@ -382,23 +382,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\patyl\\.nuget\\packages\\": {},
+    "C:\\Users\\erick\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\patyl\\Documents\\Proyectos_Ingenieria\\Refactorizacion-Capa-Applicacion\\Mediator_REST-API\\Mediator_REST-API.csproj",
+      "projectUniqueName": "C:\\Users\\erick\\Documents\\Quinto Semestre\\Patrones de Software\\Deberes\\Patterns_Solution\\Mediator_REST-API\\Mediator_REST-API.csproj",
       "projectName": "Mediator_REST-API",
-      "projectPath": "C:\\Users\\patyl\\Documents\\Proyectos_Ingenieria\\Refactorizacion-Capa-Applicacion\\Mediator_REST-API\\Mediator_REST-API.csproj",
-      "packagesPath": "C:\\Users\\patyl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\patyl\\Documents\\Proyectos_Ingenieria\\Refactorizacion-Capa-Applicacion\\Mediator_REST-API\\obj\\",
+      "projectPath": "C:\\Users\\erick\\Documents\\Quinto Semestre\\Patrones de Software\\Deberes\\Patterns_Solution\\Mediator_REST-API\\Mediator_REST-API.csproj",
+      "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\erick\\Documents\\Quinto Semestre\\Patrones de Software\\Deberes\\Patterns_Solution\\Mediator_REST-API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\patyl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -412,6 +412,7 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {}
         }
@@ -430,6 +431,7 @@
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "FluentValidation": {
